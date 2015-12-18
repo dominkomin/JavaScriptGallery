@@ -1,0 +1,248 @@
+﻿body {
+  color: #333;
+  text-align: center;
+  font-family: Arial;
+}
+.menuSpacer {
+  height: 100px;
+}
+.sidr textarea {
+  margin: 0;
+  font-size: 1.5em;
+}
+.row {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+  display: table;
+  height: 100%;
+}
+#headerRow {
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 5%;
+}
+#headerRow h1 a {
+  vertical-align: super;
+  font-size: 14px;
+  text-decoration: none;
+}
+#singleCube {
+  margin: 50px;
+  float: left;
+}
+#multiCube {
+  float: left;
+  margin-top: 10px;
+}
+#multiCube td {
+  padding-left: 100px;
+  padding-bottom: 48px;
+}
+/* 3D Cube Common*/
+.overlay-left {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 35%;
+  height: 100%;
+  z-index: 10000000;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+/* 3D Cube Big */
+.space3d {
+  perspective: 1000px;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  display: inline-block;
+}
+._3dface {
+  overflow: hidden;
+  position: absolute;
+  background: #FFF;
+  color: #333;
+  width: 400px;
+  height: 400px;
+}
+._3dbox {
+  display: inline-block;
+  transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+#one ._3dbox,
+#five ._3dbox {
+  transform: rotateX(-15deg) rotateY(45deg);
+}
+._3dface--front {
+  transform: translate3d(0, 0, 200px);
+}
+._3dface--top {
+  transform: rotateX(90deg) translate3d(0, 0, 200px);
+}
+._3dface--bottom {
+  transform: rotateX(-90deg) translate3d(0, 0, 200px);
+}
+._3dface--left {
+  left: 50%;
+  margin-left: -200px;
+  transform: rotateY(-90deg) translate3d(0, 0, 200px);
+}
+._3dface--right {
+  left: 50%;
+  margin-left: -200px;
+  transform: rotateY(90deg) translate3d(0, 0, 200px);
+}
+._3dface--back {
+  transform: rotateY(180deg) translate3d(0, 0, 200px);
+}
+.overlay-right {
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: right;
+  position: fixed;
+  left: 260px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 35%;
+  height: 100%;
+  z-index: 10000000;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+/* 3D Cube Small */
+.space3dSmall {
+  perspective: 1000px;
+  width: 210px;
+  height: 210px;
+  text-align: center;
+  display: inline-block;
+}
+._3dfaceSmall {
+  overflow: hidden;
+  position: absolute;
+  background: #FFF;
+  color: #333;
+  width: 210px;
+  height: 210px;
+}
+._3dboxSmall {
+  display: inline-block;
+  transition: all 0.85s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+._3dface--frontSmall {
+  transform: translate3d(0, 0, 105px);
+}
+._3dface--topSmall {
+  transform: rotateX(90deg) translate3d(0, 0, 105px);
+}
+._3dface--bottomSmall {
+  transform: rotateX(-90deg) translate3d(0, 0, 105px);
+}
+._3dface--leftSmall {
+  left: 50%;
+  margin-left: -105px;
+  transform: rotateY(-90deg) translate3d(0, 0, 105px);
+}
+._3dface--rightSmall {
+  left: 50%;
+  margin-left: -105px;
+  transform: rotateY(90deg) translate3d(0, 0, 105px);
+}
+._3dface--backSmall {
+  transform: rotateY(180deg) translate3d(0, 0, 105px);
+}
+.overlay-rightSmall {
+  position: fixed;
+  left: 136.5px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 35%;
+  height: 100%;
+  z-index: 10000000;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: right;
+}
+._3dface--front,
+._3dface--frontSmall {
+  background: url(http://2.bp.blogspot.com/-JxKfUObT4L8/UYYaRhRNJmI/AAAAAAAAAUY/243IlIOKj2c/s320/brahama.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+._3dface--left,
+._3dface--leftSmall {
+  background: url(http://4.bp.blogspot.com/-HGFGdCGFTkw/UXVq6PNmS4I/AAAAAAAAAUE/hBNmVCOVlu4/s400/durga+wm.jpg);
+  background-size: cover;
+}
+._3dface--right,
+._3dface--rightSmall {
+  background: url(http://2.bp.blogspot.com/-yrnBD8wJ-g0/UNRtPF8pR7I/AAAAAAAAATE/YSpLvqTNyoQ/s320/A+P+J+abdul+kalam_+swm+.jpg);
+  background-size: auto 100%;
+}
+._3dface--top,
+._3dface--topSmall {
+  background: url(http://3.bp.blogspot.com/-mySu8dy4ux4/ULiVKS4YBbI/AAAAAAAAAR0/vBMi_4dAPDE/s400/rajiv+dixit+s.jpg);
+  background-size: auto 100%;
+}
+._3dface--bottom,
+._3dface--bottomSmall {
+  background: url(http://2.bp.blogspot.com/-B9QWFtc9bVY/UHFs7y9GqkI/AAAAAAAAARI/YLDkoHYr3g4/s400/Gau+wm.jpg);
+  background-size: auto 100%;
+}
+._3dface--back,
+._3dface--backSmall {
+  background: url(http://3.bp.blogspot.com/-ofufG97PpiU/UBzXu-1AisI/AAAAAAAAAP0/iDnhOh-vrb8/s400/shiv+ji.jpg);
+  background-size: auto 100%;
+}
+.overlay-middle {
+  position: fixed;
+  left: 140px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  height: 100%;
+  z-index: 10000000;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.overlay-middleSmall {
+  position: fixed;
+  left: 73.5px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  height: 100%;
+  z-index: 10000000;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.overlay-middle-image {
+  display: none;
+}

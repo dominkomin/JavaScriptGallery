@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Flikr Gallery</title>
+
+	<script src="js/jquery-2.1.3.min.js"></script>
+	
+	<script src="js/jquery.sidr.min.js"></script>
+	<link rel="stylesheet" href="css/jquery.sidr.dark.css" />
+
+    <script src="js/glisse.js"></script>
+	<link rel="stylesheet" href="css/glisse.css" />
+
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+	<script src="js/scripts.js"></script>
+</head>
+    <body>
+        
+		<div id="sidr" style="display: block; left: 0" class="sidr left">
+			<!-- Your content -->
+			<ul>
+				<li><textarea placeholder="Your tags" id="tagsHolder"></textarea></li>
+			    <li ><a id="tagSearch">Search by tag</a></li>
+			    <div class="menuSpacer"></div>
+			    <li><a id="location">Search by my location</a></li>
+				<!--<li><a id="simple-menu">Close Menu</a></li>-->
+			</ul>
+		</div>
+
+        <div id="headerRow">
+			<a id="simple-menu">Close Menu</a>
+            <h1>Dominik's Super Gallery<a href="#"> v1.0.0</a></h1>
+            <p>You better like it</p>
+        </div>
+        <div class="row">
+            <div id="singleCube">
+                <div id="one" class="space3d">
+                    <div class="_3dbox">
+                        <div class="_3dface _3dface--front" draggable="true">
+                            <div class="overlay-left"></div>
+                            <div class="overlay-middle">
+                                <img class="overlay-middle-image" rel="one" />
+                            </div>
+                            <div class="overlay-right"></div>
+                        </div>
+                        <div class="_3dface _3dface--left">
+                            <div class="overlay-left"></div>
+                            <div class="overlay-middle">
+                                <img class="overlay-middle-image" rel="one" />
+                            </div>
+                            <div class="overlay-right"></div>
+                        </div>
+                        <div class="_3dface _3dface--right">
+                            <div class="overlay-left"></div>
+                            <div class="overlay-middle">
+                                <img class="overlay-middle-image" rel="one" />
+                            </div>
+                            <div class="overlay-right"></div>
+                        </div>
+                        <div class="_3dface _3dface--back">
+                            <div class="overlay-left"></div>
+                            <div class="overlay-middle">
+                                <img class="overlay-middle-image" rel="one" />
+                            </div>
+                            <div class="overlay-right"></div>
+                        </div>
+						<div class="_3dface _3dface--top"></div>
+						<div class="_3dface _3dface--bottom"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="multiCube">
+                <table>
+                    <tr>
+                        <td>
+                            <div id="two" class="space3dSmall">
+                                <div class="_3dbox">
+                                    <div class="_3dfaceSmall _3dface--frontSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="two" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+                                    <div class="_3dfaceSmall _3dface--leftSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="two" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+                                    <div class="_3dfaceSmall _3dface--rightSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="two" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+                                    <div class="_3dfaceSmall _3dface--backSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="two" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="three" class="space3dSmall">
+                                <div class="_3dbox">
+                                    <div class="_3dfaceSmall _3dface--frontSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="three" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+                                    <div class="_3dfaceSmall _3dface--leftSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="three" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+                                    <div class="_3dfaceSmall _3dface--rightSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="three" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+                                    <div class="_3dfaceSmall _3dface--backSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="three" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="four" class="space3dSmall">
+                                <div class="_3dbox">
+                                    <div class="_3dfaceSmall _3dface--frontSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="four" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+                                    <div class="_3dfaceSmall _3dface--leftSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="four" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+                                    <div class="_3dfaceSmall _3dface--rightSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="four" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+                                    <div class="_3dfaceSmall _3dface--backSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="four" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="five" class="space3dSmall">
+                                <div class="_3dbox">
+                                    <div class="_3dfaceSmall _3dface--frontSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="five" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+                                    <div class="_3dfaceSmall _3dface--leftSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="five" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+                                    <div class="_3dfaceSmall _3dface--rightSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="five" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+                                    <div class="_3dfaceSmall _3dface--backSmall">
+                                        <div class="overlay-left"></div>
+                                        <div class="overlay-middleSmall">
+                                            <img class="overlay-middle-image" rel="five" />
+                                        </div>
+                                        <div class="overlay-rightSmall"></div>
+                                    </div>
+									<div class="_3dfaceSmall _3dface--topSmall"></div>
+									<div class="_3dfaceSmall _3dface--bottomSmall"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
